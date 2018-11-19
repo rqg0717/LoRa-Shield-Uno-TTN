@@ -37,17 +37,17 @@
 #define DATA_LEN 5
 
 // LoRaWAN NwkSKey, network session key
-static const PROGMEM u1_t NWKSKEY[16] = { 0x70, 0x96, 0xB1, 0x37, 0x2E, 0x3D,
+static const PROGMEM u1_t NWKSKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                                           0x07, 0x02, 0xD9, 0x76, 0x87, 0x8F, 0x0E, 0x23, 0xDE, 0x28
                                         };
 
 // LoRaWAN AppSKey, application session key
-static const u1_t PROGMEM APPSKEY[16] = { 0xD8, 0xF7, 0x2B, 0x68, 0x6A, 0xAC,
+static const u1_t PROGMEM APPSKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                                           0x5F, 0x80, 0x1D, 0xC6, 0xF9, 0x2C, 0xF0, 0xBC, 0x56, 0x54
                                         };
 
 // LoRaWAN end-device address (DevAddr)
-static const u4_t DEVADDR = 0x2602194A;
+static const u4_t DEVADDR = 0x00000000;
 
 // payload to send to the gateway
 static uint8_t payload[DATA_LEN];
