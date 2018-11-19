@@ -1,7 +1,7 @@
 /*******************************************************************************
 
    Example of using a Lora Shield Uno and DHT11 with a single-channel
-   Dragino LG01-P US915 gateway to upload data to the things network.
+   Dragino LG01-P US915 gateway to send data to The Things Network.
 
    This uses ABP (Activation-by-personalisation), where a DevAddr and
    Session keys are preset (unlike OTAA, where a DevEUI and
@@ -9,7 +9,7 @@
    assigned/generated in the over-the-air-activation procedure).
 
    To use this sketch, first register your application and device with
-   the things network, to generate a DevAddr, NwkSKey and AppSKey.
+   TTN, to generate a DevAddr, NwkSKey and AppSKey.
    Each device should have their own unique values for these fields.
 
    Copyright (c) 2015 Thomas Telkamp and Matthijs Kooijman
