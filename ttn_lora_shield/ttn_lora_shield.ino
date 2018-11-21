@@ -133,7 +133,7 @@ void print_ABP_information(void) {
 
   Serial.print("NwKSKey: ");
   for (i = 0; i <= 15; i++) {
-    chartemp = pgm_read_word_near(NWKSKEY + i);
+    cc = pgm_read_word_near(NWKSKEY + i);
     dec_to_hex((cc >> 4) & 0xf);
     dec_to_hex(cc & 0xf);
   }
@@ -141,7 +141,7 @@ void print_ABP_information(void) {
   Serial.println("");
   Serial.print("AppSKey: ");
   for (i = 0; i <= 15; i++) {
-    chartemp = pgm_read_word_near(APPSKEY + i);
+    cc = pgm_read_word_near(APPSKEY + i);
     dec_to_hex((cc >> 4) & 0xf);
     dec_to_hex(cc & 0xf);
   }
